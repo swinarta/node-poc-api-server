@@ -1,7 +1,7 @@
 {
     "name": "sample-api-server",
     "version" : "1.0.0",
-    "description": "NodeJs Sample API Server with basic authentication, facebook authentication and session manager using restify, passport and mongoose",
+    "description": "NodeJs Sample API Server with basic authentication, facebook authentication and session manager using restify, passportjs and mongoosejs",
     "dependencies": {
         "restify": ">= 1.4.2",
         "underscore": ">= 1.3.3",
