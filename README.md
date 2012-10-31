@@ -9,16 +9,16 @@ NodeJs Sample API Server with basic authentication, facebook authentication and 
 
 ## REST API
 
-*To login using in-house basic authentication, submit a POST request to /login/basic with email as username and provide password if needed.
-*To login using facebook basic authentication, submit a POST request to /login/facebook with facebook_id as username and access_token as password.
-*Upon successful login request, the server will respond with 200 and Set-Cookie on the header with a valid session id.
-*Requests to /whoami and /protected must include a valid session id in the request header.
-*The server will respond with 400 on invalid login or when accessing protected resource without a valid session id.
+* To login using in-house basic authentication, submit a POST request to /login/basic with email as username and provide password if needed.
+* To login using facebook basic authentication, submit a POST request to /login/facebook with facebook_id as username and access_token as password.
+* Upon successful login request, the server will respond with 200 and Set-Cookie on the header with a valid session id.
+* Requests to /whoami and /protected must include a valid session id in the request header.
+* The server will respond with 400 on invalid login or when accessing protected resource without a valid session id.
 
 ## Mongoose Schema Plugins
-*lastModified.js: add createDate and lastModifiedDate automatically
-*version.js and update.js: provide optimistic lock check, at least for mongoose < 3.0 (optional)
-*password.js: encrypt password
+* lastModified.js: add createDate and lastModifiedDate automatically
+* version.js and update.js: provide optimistic lock check, at least for mongoose < 3.0 (optional)
+* password.js: encrypt password
 
 # License (MIT License)
 
